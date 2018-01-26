@@ -46,5 +46,13 @@ namespace display_cost_of_a_rectangle_plot_using_inheritance
         }
     }
 
-
+    class CalRectangle
+    {
+        static void Main(string[] args)
+        {
+            Tabletop t = new Tabletop(7.5, 8.03);
+            t.Display();
+            Console.ReadLine();
+        }
+    }
 }
