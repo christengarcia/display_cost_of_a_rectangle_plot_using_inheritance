@@ -27,5 +27,24 @@ namespace display_cost_of_a_rectangle_plot_using_inheritance
         }
     }
 
+    class Tabletop : Rectangle
+    {
+        private double cost;
+        public Tabletop(double l, double w)
+            : base(l, w)
+        { }
+        public double Costcal()
+        {
+            double cost;
+            cost = GetArea() * 70;
+            return cost;
+        }
+        public void Display()
+        {
+            base.Display();
+            Console.WriteLine("Cost: {0}", Costcal());
+        }
+    }
+
 
 }
